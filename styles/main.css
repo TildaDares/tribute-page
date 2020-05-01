@@ -175,6 +175,10 @@ button {
     font-size: 1.2rem;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 footer i {
     color: white;
     padding-top: 10px;
