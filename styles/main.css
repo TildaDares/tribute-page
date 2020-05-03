@@ -120,9 +120,14 @@ section {
     padding-bottom: 20px;
 }
 
-.poem {
+.poem,
+.lineheight p {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.lineheight {
+    line-height: 1.9;
 }
 
 .author {
@@ -227,6 +232,9 @@ footer i {
     .padding {
         margin-top: 20px;
         line-height: 30px;
+        font-size: 1.2rem;
+    }
+    .lineheight p {
         font-size: 1.2rem;
     }
     #herstory {
