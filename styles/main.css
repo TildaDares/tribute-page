@@ -88,8 +88,11 @@ i {
     margin: auto;
 }
 
-#img-caption a,
-.padding a,
+#img-caption a {
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
 .author a {
     text-decoration: none;
 }
@@ -171,22 +174,26 @@ button {
     align-items: center;
     margin: auto;
     width: 150px;
-    height: 30px;
+    height: 36px;
     background-color: red;
     border: 1px hidden black;
     border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
 }
 
-button:hover {
-    cursor: pointer;
+button:active {
+    background-color: maroon;
 }
 
 footer i {
     color: white;
     padding-top: 10px;
+}
+
+footer i:active {
+    background: none;
 }
 
 
@@ -238,7 +245,6 @@ footer i {
         font-size: 1.2rem;
     }
     #herstory {
-        font-family: 'Lora', serif;
         padding-top: 20px;
         font-size: 1.9rem;
     }
@@ -246,29 +252,12 @@ footer i {
         font-size: 1.9rem;
     }
     .about-contact {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         column-gap: 40px;
-        padding-right: 10px;
         padding-left: 30px;
         padding-bottom: 20px;
         line-height: 30px;
     }
     .left-footer::after {
         content: 'Over 5 million writers post their highly educative content on this platform to provide you with only the best. Subscribe now and get only the best from us at "The Sayings".';
-    }
-    button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        width: 200px;
-        height: 30px;
-        background-color: red;
-        border: 1px hidden black;
-        border-radius: 5px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 1.2rem;
     }
 }
